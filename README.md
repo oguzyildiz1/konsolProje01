@@ -9,9 +9,9 @@
 <p>Dört işlem hesaplamaları yapar</p>
 <h5><i>Sıcaklık Çevirme</i></h5>
 <img src="./tanitim/sicaklikCevirme_proje01.png" width='200' />
-<p>Girilen Fahrenheit veya Celcius sıcaklık değerlerini diğer sıckalık birimine çevirir. </p>
+<p>Girilen Fahrenheit veya Celcius sıcaklık değerlerini diğer sıcaklık birimine çevirir. </p>
 <h5><i>Not Hesaplama</i></h5>
 <img src="./tanitim/notHesaplama_proje01.png" width='200' />
 <p>Yıl sonu üniversite harf notunuzu hesaplar ve kalıp ya da geçtiğinizi ekrana yazdırır </p>
 <h5><i>Robot Çizimi</i></h5>
-<p><em>Turtle kütüphanesi</em> ile <stront>robot</strong> çizer.</p>
+<p><em>Turtle kütüphanesi</em> ile <strong>robot</strong> çizer.</p>
