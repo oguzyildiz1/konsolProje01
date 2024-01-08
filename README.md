@@ -1,6 +1,6 @@
 # konsolProje01
 <h2>Konsol Projesi</h2>
-<p>Vektörel bilişim python kursu için ilk projeyi içerir. Konsol ile <strong>aşağıdaki</strong> programları çalıştırır </p>
+<p><big>Vektörel bilişim</big> python kursu için ilk projeyi içerir. Konsol ile <small>aşağıdaki</small> programları çalıştırır </p>
 <h5><i>Hava Durum</i></h5>
 <img src="./tanitim/02_proje01_hava.png" width='200' />
 <h5><i>Hesap Makinesi</i></h5>
