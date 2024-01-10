@@ -3,6 +3,7 @@
 <p><i>Vektörel bilişim</i> python kursu için ilk projesi olup, konsol ile çağırılabilen aşağıdaki programları içerir.  </p>
 <h5><i>Ana Sayfa</i></h5>
 <img src="./tanitim/anaSayfa.png" width='200' />
+<p>Programların listelendiği sayfadır.</p>
 <h5><i>Hava Durum</i></h5>
 <img src="./tanitim/02_proje01_hava.png" width='200' />
 <p>Hava durumunu gece ve gündüz olarak görüntüler</p>
