@@ -6,6 +6,7 @@ import hesapmakinesi.hesaplama
 import sicaklikcevirme.sicaklik
 import nothesaplama.notHesap
 import robotcizim.robotciz
+import sayitahminoyunu.sayitahmini
 
 def anamenu():
     print("╔" + "═"*25 +"╗")
@@ -15,6 +16,8 @@ def anamenu():
     print("║   3. Sıcaklık çevirme   ║")
     print("║   4. Not hesaplama      ║")
     print("║   5. Robot Çizimi       ║")
+    print("║   6. Sayı tahmini       ║")
+    print("║      Oyunu              ║")
     print("╠"+ "═"*25 + "╣")
     print("║Seçiminiz: \t\t  ║")
     print("╚" + "═"*25 +"╝")
@@ -33,6 +36,9 @@ def anamenu():
         anamenu()
     elif secim1 == "5":
         robotcizim.robotciz.robciz()
+        anamenu()
+    elif secim1 == "6":
+        sayitahminoyunu.sayitahmini.get_score()
         anamenu()
     #elif secim1 == "Q":5
     #    exit()

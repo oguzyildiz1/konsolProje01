@@ -1,6 +1,8 @@
 # konsolProje01
 <h2>Konsol Projesi</h2>
 <p><i>Vektörel bilişim</i> python kursu için ilk projesi olup, konsol ile çağırılabilen aşağıdaki programları içerir.  </p>
+<h5><i>Ana Sayfa</i></h5>
+<img src="./tanitim/anaSayfa.png" width='200' />
 <h5><i>Hava Durum</i></h5>
 <img src="./tanitim/02_proje01_hava.png" width='200' />
 <p>Hava durumunu gece ve gündüz olarak görüntüler</p>
@@ -15,3 +17,7 @@
 <p>Yıl sonu üniversite harf notunuzu hesaplar ve kalıp ya da geçtiğinizi ekrana yazdırır </p>
 <h5><i>Robot Çizimi</i></h5>
 <p><em>Turtle kütüphanesi</em> ile <strong>robot</strong> çizer.</p>
+<h5><i>Sayı tahmin oyunu</i></h5>
+<img src="./tanitim/sayi_tahmini.png" width='200' />
+<p>Bilgisayar 1 ila 100 arasında bir sayı tutar ve siz bu sayıyı bilmeğe çalışırsınız.</p>
+
