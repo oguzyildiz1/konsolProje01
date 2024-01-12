@@ -1,1 +1,1 @@
-Vektörel bilişim ilk pojesi
+#Vektörel bilişim ilk pojesi
