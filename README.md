@@ -1,0 +1,1 @@
+Vektörel bilişim ilk pojesi
