@@ -23,6 +23,6 @@
 <p>Bilgisayar 1 ila 100 arasında bir sayı tutar ve siz bu sayıyı bilmeğe çalışırsınız.</p>
 <h5><i>Bilgi Yarışması</i></h5>
 <img src="./tanitim/bilgiYarismasi.png" width='200' />
-<p> 5 soruluk bilgi yarışması. Random kütüphanesi ile soru havuzundan tastgele 5 tane soru seçer. Cevaplara göre skorunuzu yazdırır.</p>
+<p> 5 soruluk bilgi yarışması. Random kütüphanesi ile soru havuzundan rastgele 5 tane soru seçer. Cevaplara göre skorunuzu yazdırır.</p>
 
 
