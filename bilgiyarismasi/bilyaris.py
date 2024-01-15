@@ -10,10 +10,11 @@ def byMenu(): # bilgi yarışması ana menu
     print("╔" + "═"*30 +"╗")
     print("║        Bilgi Yarışması       ║")
     print("╠"+ "═"*30 + "╣")
-    print("║  - Genel kültür ile alakalı  ║")
+    print("║  Genel kültür ile alakalı    ║")
     print("║    5 soru sorulacaktır.      ║")
-    print("║  - Cevapları küçük harf ile  ║")
-    print("║    giriniz. (a / b / c)      ║")
+    print("║                              ║")
+    print("║  Cevapları küçük harf ile    ║")
+    print("║    giriniz.                  ║")
     print("╠"+ "═"*30 + "╣")
     print("║ Başlamak için: 1'i tuşlayın  ║")
     print("╚" + "═"*30 +"╝")
@@ -127,8 +128,6 @@ def soruSec(): # soru secim listesine 5 tane raslantısal soru seçiyor.
 
     return soruSecimListesi
 
-
-byMenu()
 #soruSecimListesi = [] # secilen soru sıralması
  # 1. 2. .3 diye secilen listesindeki soruları soruyor. 
 
