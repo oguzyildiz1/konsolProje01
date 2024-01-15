@@ -21,4 +21,8 @@
 <h5><i>Sayı tahmin oyunu</i></h5>
 <img src="./tanitim/sayi_tahmini.png" width='200' />
 <p>Bilgisayar 1 ila 100 arasında bir sayı tutar ve siz bu sayıyı bilmeğe çalışırsınız.</p>
+<h5><i>Bilgi Yarışması</i></h5>
+<img src="./tanitim/bilgiYarismasi.png" width='200' />
+<p> 5 soruluk bilgi yarışması. Random kütüphanesi ile soru havuzundan 5 tane soru seçer. Cevaplara göre skorunuzu yazdırır.</p>
+
 
