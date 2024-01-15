@@ -73,7 +73,7 @@ cevaplar = {
     "2" : ["a)2.4    b)-2    c)0","c"],
     "3" : ["a)Avar Kağanlığı    b)Emevi devleti   c) Hun imparatorluğu","b"],
     "4" : ["a)2000   b)2001   c)2002","a"],
-    "5" : ["a)penguen    b)yarasa    c)yunus","b"],
+    "5" : ["a)penguen    b)yarasa    c)yunus","a"],
     "6" : ["a)5    b)6    c)7","b"],
     "7" : ["a)100    b)1000    c)10000","b"],
     "8" : ["a)Peru    b)Madagaskar    c)Singapur","c"],
