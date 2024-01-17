@@ -8,6 +8,8 @@ import nothesaplama.notHesap
 import robotcizim.robotciz
 import sayitahminoyunu.sayitahmini
 import bilgiyarismasi.bilyaris
+import dogumhesaplari.dogumtarihi
+import dogumhesaplari.gunlerlistesi
 
 def anamenu():
     print("╔" + "═"*25 +"╗")
@@ -20,6 +22,8 @@ def anamenu():
     print("║   6. Sayı tahmini       ║")
     print("║      Oyunu              ║")
     print("║   7. Bilgi yarışması    ║")
+    print("║   8. Doğum Tarihi       ║")
+    print("║      Hesapları          ║")
     print("╠"+ "═"*25 + "╣")
     print("║Seçiminiz: \t\t  ║")
     print("╚" + "═"*25 +"╝")
@@ -45,6 +49,10 @@ def anamenu():
     elif secim1 == "7":
         bilgiyarismasi.bilyaris.byMenu()
         anamenu()
+    elif secim1 == "8":
+        dogumhesaplari.dogumtarihi.dtMenu()
+        anamenu()
     #elif secim1 == "Q":5
     #    exit()
 anamenu()
+input()
