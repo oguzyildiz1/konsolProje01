@@ -15,7 +15,7 @@ def setMonthsTurkish():
     
     return aylar
 
-
+"""
 def setZodiacSign():
     signs = {
         "Koç" : ["21 Mart", "20 Nisan"],
@@ -33,9 +33,9 @@ def setZodiacSign():
             }
     
     return signs
-
-
-def set_zodiac_sign_2():
+"""
+#---------------- bu dictionary liste içersinde yazılacak
+def set_zodiac_sign_2(): 
     signs = {
         "Koç" : "21 Mart",
         "Boğa" : "21 Nisan",
@@ -53,9 +53,33 @@ def set_zodiac_sign_2():
     
     return signs
 
-
+# --------------- burada kaldım ---------------
+# --------------- dictionary yerine klasor içindeki screenshot ile devam et...
 def find_zodiac(dogumAy, dogumGun):
-    
+    signs = set_zodiac_sign_2()
+    #dogumAy, dogumGun #girilen doğum ayı, ve günü
+    #onceki_ay = ""
+
+    for i in signs:
+        splitted_data = signs[i].split() #['21','Mart']
+        burc_baslangic_gunleri = int(splitted_data[0]) #['21']
+        burc_aylari = splitted_data[1] #['Mart'] #hazır burç listesindeki data
+        #Girdiğimiz aya göre o ayın burcunu yazacak.
+        print(dogumAy)
+        if dogumAy == "Mart": #mart'a özel bir durum
+            if dogumGun < burc_baslangic_gunleri:
+                print("Burcunuz: Balık burcu")
+            elif dogumGun >= burc_baslangic_gunleri:
+                print(f"Burcunuz: {i}")
+        elif dogumAy == burc_aylari: # girilen ay ise nisan
+            if dogumGun < burc_baslangic_gunleri:
+                print(f"Burcunuz: ")
+            if dogumGun >= burc_baslangic_gunleri:
+                print(f"Burcunuz: {i}")
+
+
+        #print(splitted_data)
+
     
 
 def findZodiacSign(dogumA, dogumG):
@@ -91,7 +115,7 @@ def findZodiacSign(dogumA, dogumG):
     print(signs["Koç"][0])
     
 
-dogumAyi = "Mart"
-dogumGun = 12
+dogumAyi = "Nisan"
+dogumGun = 21
 
 find_zodiac(dogumAyi, dogumGun)
