@@ -1,7 +1,10 @@
 #dogum günleri programları
 import datetime
-import gunlerlistesi #klasör isimini de girmek gerekiyor. /E
+import dogumhesaplari.gunlerlistesi1 #klasör isimini de girmek gerekiyor. /E
 
+
+dogumTar = ""
+isTarihSet = False
 # gelen tarihi yıl, ay ve gün olarak ayırır ve int olarak listeye ekler
 def tarihAyirma(para1):
     tarih = para1
@@ -61,15 +64,16 @@ def secimIslemleri(dogumBil, simdikiZaman):
         input()
         dtMenu()
     if secim == "2":
-        gunlerTurkce = gunlerlistesi.setDaysTurkish() #günler listesi burada tutuluyor (turkce / ingilizce)
+        gunlerTurkce = dogumhesaplari.gunlerlistesi1.setDaysTurkish() #günler listesi burada tutuluyor (turkce / ingilizce)
+        #klasör ismini de girmek gerekiyor....
         dogumGunu = dogumBil.strftime("%A")
         print(dogumBil.strftime("%Y"),"yılında doğduğunuz gün:", gunlerTurkce[dogumGunu])
         #print(gunlerTurkce["Monday"])
         input()
         dtMenu()
+
         
     
-dogumTar = ""
-isTarihSet = False
 
-dtMenu()
+
+# dtMenu()

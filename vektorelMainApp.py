@@ -9,7 +9,7 @@ import robotcizim.robotciz
 import sayitahminoyunu.sayitahmini
 import bilgiyarismasi.bilyaris
 import dogumhesaplari.dogumtarihi
-import dogumhesaplari.gunlerlistesi
+# import dogumhesaplari.gunlerlistesi1
 
 def anamenu():
     print("╔" + "═"*25 +"╗")
@@ -54,5 +54,5 @@ def anamenu():
         anamenu()
     #elif secim1 == "Q":5
     #    exit()
-anamenu()
+anamenu() # 
 input()
