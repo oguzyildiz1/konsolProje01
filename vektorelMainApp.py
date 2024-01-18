@@ -7,7 +7,7 @@ import sicaklikcevirme.sicaklik
 import nothesaplama.notHesap
 import robotcizim.robotciz
 import sayitahminoyunu.sayitahmini
-import bilgiyarismasi.bilyaris
+import bilgiyarismasi.bilyaris 
 import dogumhesaplari.dogumtarihi
 # import dogumhesaplari.gunlerlistesi1
 
