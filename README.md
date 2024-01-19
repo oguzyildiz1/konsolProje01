@@ -1,4 +1,3 @@
-# konsolProje01
 <h2>Konsol Projesi</h2>
 <p><i>Vektörel bilişim</i> python kursu için ilk projesi olup, konsol ile çağırılabilen aşağıdaki programları içerir.  </p>
 <h5><i>Ana Sayfa</i></h5>
