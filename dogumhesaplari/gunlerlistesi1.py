@@ -16,20 +16,12 @@ def setMonthsTurkish():
     return aylar
 
 
-def setZodiacSign():
-    signs = {
-        "Koç" : ["21 Mart", "20 Nisan"],
-        "Boğa" : ["21 Nisan", "20 Mayıs"],
-        "İkizler" : ["21 Mayıs", "21 Haziran"],
-        "Yengeç" : ["22 Haziran", "22 Temmuz"],
-        "Aslan" : ["23 Temmuz", "22 Ağustos"],
-        "Başak" : ["23 Ağustos", "22 Eylül"],
-        "Terazi" : ["23 Eylül", "23 Ekim"],
-        "Akrep" : ["24 Ekim", "22 Kasım"],
-        "Yay" : ["23 Kasım", "21 Aralık"],
-        "Oğlak" : ["22 Aralık", "20 Ocak"],
-        "Kova" : ["21 Ocak", "18 Şubat"],
-        "Balık" : ["19 Şubat", "20 Mart"],
-            }
+def set_zodiac_sign(): # son liste(çalışıyor)
+    signs = [
+        {"Koc" : ("Mart", 21)}, {"Boğa" : ("Nisan", 21)}, {"İkizler" : ("Mayıs", 21)},
+        {"Yengeç" : ("Haziran", 22)}, {"Aslan" : ("Temmuz", 23)}, {"Başak" : ("Ağustos", 23)},
+        {"Terazi" : ("Eylül", 23)}, {"Akrep" : ("Ekim", 24)}, {"Yay" : ("Kasım", 23)}, 
+        {"Oğlak" : ("Aralık", 22)}, {"Kova" : ("Ocak", 21)}, {"Balık" : ("Şubat", 19)}
+    ]
     
     return signs

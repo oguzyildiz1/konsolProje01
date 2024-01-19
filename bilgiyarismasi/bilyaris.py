@@ -135,5 +135,4 @@ def soruSec(): # soru secim listesine 5 tane raslantısal soru seçiyor.
 
 #soruSor(soruSecimListesi)
 
-input()
 

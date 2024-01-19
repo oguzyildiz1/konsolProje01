@@ -70,6 +70,40 @@ def findZodiacSign(dogumA, dogumG):
     # print(dogumA, dogumG)
     # print(signs)
     
+    
+def find_zodiac(dogumAy, dogumGun):
+    signs = dogumhesaplari.gunlerlistesi1.set_zodiac_sign() # burc listesini alıyor
+
+    #dogumAy, dogumGun #girilen doğum ayı, ve günü
+    #onceki_ay = ""
+    #print(signs[3]) # {'Koc': ('Mart', 21)}
+    key = 0 
+    
+    for i in signs:
+        #print(signs[key] ," sırası")
+        # index numarasını tutyor
+        # print(i.keys()) # dict_keys(['İkizler'])
+        # print(i) # dizideki değişkenleri veriyor {'Koc': ('Mart', 21)}
+        for j in i:
+            """
+            print(" ", j, end=", ") #koc
+            print(" ", i[j], end=", ") #('Mart', 21)
+            print(" ", i[j][0]) # Mart 
+            print(" ", i[j][1]) # 21 
+            """
+            if i[j][0] == dogumAy: # girilen ay bu tupledaki ay ise
+                if dogumGun >= i[j][1]: # ve girilen gün burcun başlangıç gününden fazlaysa
+                    print("Burcunuz:", j) # burcunuzu bulduk
+                    break
+                elif dogumGun < i[j][1]:
+                    for a in signs[key-1]: # burucunu veriyor
+                        print("Burcunuz:", a)
+                    #print("c:", dogumGun, i[j][0]) # 18 Nisan
+                    #print("Burcunuz:", signs[key-1][j][0], "key :", key-1, )
+                    #print(signs[key-1][j])
+                    break
+        key += 1 # index numarasını tutuyor.
+    
 
 
 def secimIslemleri(dogumBil, simdikiZaman): # dogumBil bir dizi değişkendir. İçerisinde ay, gün ve yıl vardır
@@ -84,7 +118,7 @@ def secimIslemleri(dogumBil, simdikiZaman): # dogumBil bir dizi değişkendir. �
         gunlerTurkce = dogumhesaplari.gunlerlistesi1.setDaysTurkish() #günler listesi burada tutuluyor (turkce / ingilizce)
         #klasör ismini de girmek gerekiyor....
         dogumGunu = dogumBil.strftime("%A")
-        print(dogumBil.strftime("%Y"),"yılında doğduğunuz gün:", gunlerTurkce[dogumGunu])
+        print("Doğduğunuz gün:", gunlerTurkce[dogumGunu])
         input()
         dtMenu()
         
@@ -94,7 +128,14 @@ def secimIslemleri(dogumBil, simdikiZaman): # dogumBil bir dizi değişkendir. �
         dogumAy = dogumBil.strftime("%B") #ingilizcesi
         dogumAy = aylarTurkce[dogumAy] #türkçesi
         dogumGun = int(dogumBil.strftime("%d"))
-        findZodiacSign(dogumAy, dogumGun) #burcunu bul fonksiyonunu çağırdım.
+        find_zodiac(dogumAy, dogumGun) #burcunu bul fonksiyonunu çağırdım.
+        input()
+        dtMenu()
+    """ 
+    elif secim == "4":
+        isTarihSet = False
+        tarihAyarlama()
+    """
 
         
     

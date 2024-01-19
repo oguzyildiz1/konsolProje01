@@ -24,5 +24,8 @@
 <h5><i>Bilgi Yarışması</i></h5>
 <img src="./tanitim/bilgiYarismasi.png" width='200' />
 <p> 5 soruluk bilgi yarışması. Random kütüphanesi ile soru havuzundan rastgele 5 tane soru seçer. Cevaplara göre skorunuzu yazdırır.</p>
+<h5><i>Doğum Tarihi Hesaplamaları</i></h5>
+<img src="./tanitim/dogumBilgileri.png" width='200' />
+<p>Herhangi bir doğum tarihinden, kişinin yaşını, hangi günde doğduğunu ve burcunu bildirir. </p>
 
 

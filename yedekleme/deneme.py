@@ -34,6 +34,17 @@ def setZodiacSign():
     
     return signs
 """
+def set_zodiac_sign_3(): # son liste(çalışıyor)
+    signs = [
+        {"Koc" : ("Mart", 21)}, {"Boğa" : ("Nisan", 21)}, {"İkizler" : ("Mayıs", 21)},
+        {"Yengeç" : ("Haziran", 22)}, {"Aslan" : ("Temmuz", 23)}, {"Başak" : ("Ağustos", 23)},
+        {"Terazi" : ("Eylül", 23)}, {"Akrep" : ("Ekim", 24)}, {"Yay" : ("Kasım", 23)}, 
+        {"Oğlak" : ("Aralık", 22)}, {"Kova" : ("Ocak", 21)}, {"Balık" : ("Şubat", 19)}
+    ]
+    
+    return signs
+
+"""
 #---------------- bu dictionary liste içersinde yazılacak
 def set_zodiac_sign_2(): 
     signs = {
@@ -52,14 +63,43 @@ def set_zodiac_sign_2():
             }
     
     return signs
+"""
 
 # --------------- burada kaldım ---------------
-# --------------- dictionary yerine klasor içindeki screenshot ile devam et...
 def find_zodiac(dogumAy, dogumGun):
-    signs = set_zodiac_sign_2()
+    signs = set_zodiac_sign_3() # burc listesini alıyor
+
     #dogumAy, dogumGun #girilen doğum ayı, ve günü
     #onceki_ay = ""
-
+    print(signs[3]) # {'Koc': ('Mart', 21)}
+    key = 0
+    
+    for i in signs:
+        #print(signs[key] ," sırası")
+        # index numarasını tutyor
+        # print(i.keys()) # dict_keys(['İkizler'])
+        # print(i) # dizideki değişkenleri veriyor {'Koc': ('Mart', 21)}
+        for j in i:
+            """
+            print(" ", j, end=", ") #koc
+            print(" ", i[j], end=", ") #('Mart', 21)
+            print(" ", i[j][0]) # Mart 
+            print(" ", i[j][1]) # 21 
+            """
+            if i[j][0] == dogumAy: # girilen ay bu tupledaki ay ise
+                if dogumGun >= i[j][1]: # ve girilen gün burcun başlangıç gününden fazlaysa
+                    print("Burcunuz:", j) # burcunuzu bulduk
+                    break
+                elif dogumGun < i[j][1]:
+                    for a in signs[key-1]: # burucunu veriyor
+                        print("Burcunuz:", a)
+                    #print("c:", dogumGun, i[j][0]) # 18 Nisan
+                    #print("Burcunuz:", signs[key-1][j][0], "key :", key-1, )
+                    #print(signs[key-1][j])
+                    break
+        key += 1 # index numarasını tutuyor.
+             
+'''
     for i in signs:
         splitted_data = signs[i].split() #['21','Mart']
         burc_baslangic_gunleri = int(splitted_data[0]) #['21']
@@ -79,9 +119,9 @@ def find_zodiac(dogumAy, dogumGun):
 
 
         #print(splitted_data)
-
+'''
     
-
+"""
 def findZodiacSign(dogumA, dogumG):
     signs = setZodiacSign()
     #print(dogumA, dogumG)
@@ -114,8 +154,9 @@ def findZodiacSign(dogumA, dogumG):
         
     print(signs["Koç"][0])
     
+"""
 
-dogumAyi = "Nisan"
-dogumGun = 21
+dogumAyi = "Mart"
+dogumGun = 15
 
 find_zodiac(dogumAyi, dogumGun)
