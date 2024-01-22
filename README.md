@@ -34,5 +34,8 @@
 <h5><i>Doğum Tarihi Hesaplamaları</i></h5>
 <img src="./tanitim/dogumBilgileri.png" width='200' />
 <p>Herhangi bir doğum tarihinden, kişinin yaşını, hangi günde doğduğunu ve burcunu bildirir. </p>
+<h5><i>Kullanıcı veri işlemleri</i></h5>
+<img src="./tanitim/kayitOl.png" width='200' />
+<p>Kullanıcı verilerini işler. Ad, soyad, e-mail ve şifre verilerini kaydeder.</p>
 
 

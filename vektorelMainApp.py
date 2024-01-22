@@ -9,6 +9,7 @@ import robotcizim.robotciz
 import sayitahminoyunu.sayitahmini
 import bilgiyarismasi.bilyaris 
 import dogumhesaplari.dogumtarihi
+import kayitsistemi.kayitolma
 # import dogumhesaplari.gunlerlistesi1
 
 def anamenu():
@@ -24,6 +25,8 @@ def anamenu():
     print("║   7. Bilgi yarışması    ║")
     print("║   8. Doğum Tarihi       ║")
     print("║      Hesapları          ║")
+    print("║   9. Kullanıcı veri     ║")
+    print("║      işlemleri          ║")
     print("╠"+ "═"*25 + "╣")
     print("║Seçiminiz: \t\t  ║")
     print("╚" + "═"*25 +"╝")
@@ -51,6 +54,9 @@ def anamenu():
         anamenu()
     elif secim1 == "8":
         dogumhesaplari.dogumtarihi.dtMenu()
+        anamenu()
+    elif secim1 == "9":
+        kayitsistemi.kayitolma.komenu()
         anamenu()
     #elif secim1 == "Q":5
     #    exit()
